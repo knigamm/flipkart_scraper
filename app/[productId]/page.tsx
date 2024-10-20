@@ -11,7 +11,7 @@ export default async function ProductItem({
     where: { pid: params.productId },
     include: { priceHistory: true },
   });
-  
+
   return (
     <>
       <ProductPage product={product} />
